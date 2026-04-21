@@ -1,0 +1,26 @@
+
+--- Entering main() ---
+
+MAYO Round 1 (KAT header mode)
+MSG 32 B  CPK 5488 B  SIG 180 B
+Expanding CPK -> EPK ...
+EPK[0..15]: C0758139530ADFA6EA3F6E569269DD48
+Deriving T ...
+T[0..31]: EE7F7231B166D360F819E9CC8681645B690D6FE01E8E98967B045FF3A573D0D1
+
+[Phase 1+2] SIG+EPK transfer started
+[Phase 1+2] SIG+EPK DMA done
+
+[Phase 3] Waiting for QA output
+[Phase 3] QA done
+Result: PASS
+
+--- Timing Summary ---
+mayo_expand_pk : 73.915 ms  (6.20%)
+deriveT        : 166.160 us  (0.01%)
+DMA TX         : 1116.735 ms  (93.77%)
+HW compute     : 1.200 us  (0.00%)
+Total          : 1190.818 ms
+
+--- Exiting main() ---
+

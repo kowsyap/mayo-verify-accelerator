@@ -1,0 +1,81 @@
+Parsing: ..\kat\KAT_R1_S2.kat
+  10 test cases found.
+
+Opening COM6 @ 115200 baud...
+Waiting for device synchronization...
+UART Synchronized
+
+
+------------------------------------------------------------
+Case #1
+    Sent  MSG            217 bytes  [76B5701AB45452335620921F...]
+    Sent  CPK           5488 bytes  [55D45449330F25EB220596F9...]
+    Sent  SIGNATURE      180 bytes  [DD8C7FB4E2406861EE30C683...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #2
+    Sent  MSG            122 bytes  [C4BC95D69FB9419974529048...]
+    Sent  CPK           5488 bytes  [89E9E8469FAB9196A82A45BB...]
+    Sent  SIGNATURE      180 bytes  [32B547842408FC8AA4AA8DA4...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #3
+    Sent  MSG             76 bytes  [41368443F27C31D76CB512D8...]
+    Sent  CPK           5488 bytes  [CC4F3337C3EA138ECD842E1B...]
+    Sent  SIGNATURE      180 bytes  [AD283A95C3121E1704E43A47...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #4
+    Sent  MSG             74 bytes  [60974F806137933116E482A3...]
+    Sent  CPK           5488 bytes  [6D93B0DBA68E7C713FA17961...]
+    Sent  SIGNATURE      180 bytes  [9037BDE09D4E8BD991553E3F...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #5
+    Sent  MSG            185 bytes  [A9B2A6EEEA19FA971C2E6150...]
+    Sent  CPK           5488 bytes  [FF79C66867CC4CED50F9F6A7...]
+    Sent  SIGNATURE      180 bytes  [EC1BE690D88674434FFC3797...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #6
+    Sent  MSG             75 bytes  [A22F660B37BE876D0A932675...]
+    Sent  CPK           5488 bytes  [A9CF1818FB7F72EC0A3131EC...]
+    Sent  SIGNATURE      180 bytes  [F21A84A08DAEAD0ACB2432E8...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #7
+    Sent  MSG            178 bytes  [19D8A57F6E01E5EFD9FAF8B4...]
+    Sent  CPK           5488 bytes  [E57C7D405DC18E8B651E7433...]
+    Sent  SIGNATURE      180 bytes  [7AD1FE60AE059F2AEEA97B89...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #8
+    Sent  MSG             77 bytes  [42406533082D5CFAF7908EB1...]
+    Sent  CPK           5488 bytes  [95D43263E1BF272EEA7650E6...]
+    Sent  SIGNATURE      180 bytes  [2AC250C76561531D9EA01AEA...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #9
+    Sent  MSG            140 bytes  [03597C41C487C12E23C9DE2F...]
+    Sent  CPK           5488 bytes  [DFC4F422857E0DD7078B7C4C...]
+    Sent  SIGNATURE      180 bytes  [9F17BC3E9562C6FC1A75F02C...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+------------------------------------------------------------
+Case #10
+    Sent  MSG            166 bytes  [890D7FABB191DB32B1E56023...]
+    Sent  CPK           5488 bytes  [F3A86701B9C876A6D60A47EA...]
+    Sent  SIGNATURE      180 bytes  [B8038F73CDA0D7F066CDDCA9...]
+  PASS  device=SIGNATURE VALID  expected=SIGNATURE VALID  
+
+============================================================
+Results: 10 passed | 0 failed | 0 skipped | 10 total
+Serial port closed.

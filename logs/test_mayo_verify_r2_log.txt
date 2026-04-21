@@ -1,0 +1,17 @@
+
+--- Entering main() ---
+MAYO Round 2 (KAT header mode)
+MSG 32 B  CPK 4912 B  SIG 186 B
+Expanding CPK -> EPK ...
+EPK[0..15]: F6AAE539AEA44BC5A6043C0B3CEF633C
+Deriving T ...
+T[0..31]: 5738A3D79193BC3D80D7551B4A8CF7ED62193C2A662539207778E2D96BB26A2E
+
+[Phase 1+2] SIG+EPK transfer started
+[Phase 1+2] SIG+EPK DMA done
+
+[Phase 3] Waiting for QA output
+[Phase 3] QA done
+Result: PASS
+--- Exiting main() ---
+
