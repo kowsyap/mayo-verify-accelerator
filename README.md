@@ -20,6 +20,8 @@ This project implements an **FPGA-based hardware accelerator for verifying MAYO 
 
 The accelerator offloads the computationally intensive quadratic polynomial evaluation over GF(16) from the ARM processor to programmable logic, while the processor handles key expansion (AES-128-CTR) and target vector derivation (SHAKE256).
 
+**Source code:** https://github.com/kowsyap/mayo-verify-accelerator
+
 **Design Flow**:
 ```
 [Host PC]
@@ -141,6 +143,11 @@ code/
 │   ├── KAT_R1_S2.kat           # Round 1, Security Level 1 (Set 2) test cases
 │   └── KAT_R2_S2.kat           # Round 2, Security Level 1 (Set 2) test cases
 │
+├── latex_report/               # Final report source and compiled PDF
+│   ├── mayo_verify_report.tex   # IEEE-style LaTeX report
+│   ├── mayo_verify_report.pdf   # Compiled final report
+│   └── figures/                 # Report figures
+│
 ├── logs/                       # Captured test outputs
 │   ├── mayo_verify_accelerator_r1_log.txt  # Hardware test log (R1)
 │   ├── mayo_verify_accelerator_r2_log.txt  # Hardware test log (R2)
@@ -159,7 +166,9 @@ code/
 │
 ├── slides/                     # Project presentation slides
 │   ├── proposal.pdf            # Project proposal presentation
-│   └── update.pdf             # Progress update presentation
+│   ├── update.pdf              # Progress update presentation
+│   ├── project_slides.pdf      # Final presentation slides
+│   ├── final.pdf               # Final presentation export
 │
 ├── scripts/                    # Host-side utilities
 │   └── kat_uart_transfer.py    # Python: send KAT cases to device via UART
@@ -205,7 +214,7 @@ code/
 
 ## 4. Algorithm & Parameters
 
-<img src="figures/algorithm.png" width="500" alt="MAYO Algorithm"/>
+<img src="latex_report/figures/algorithm.png" width="500" alt="MAYO Algorithm"/>
 
 This project uses MAYO at **Security Level 1 (Set 2)**. Both Set 1 and Set 2 target security level 1 and represent alternative parameter choices within that security level. Two round variants are supported in synthesis level:
 
@@ -233,11 +242,11 @@ This project uses MAYO at **Security Level 1 (Set 2)**. Both Set 1 and Set 2 tar
 
 ## 5. Hardware Architecture
 
-<img src="figures/arch.png" width="700" alt="System Architecture"/>
+<img src="latex_report/figures/arch.png" width="700" alt="System Architecture"/>
 
 ### Top-Level FSM ([`mayo_verify.vhd`](hardware/mayo_verify.vhd))
 
-<img src="figures/fsm.png" width="350" alt="Top-Level FSM"/>
+<img src="latex_report/figures/fsm.png" width="350" alt="Top-Level FSM"/>
 
 ### AXI Wrapper ([`mayo_verify_accelerator.vhd`](hardware/mayo_verify_accelerator.vhd))
 
